@@ -1,3 +1,5 @@
+/****axios请求统一处理****/
+
 import axios from 'axios';
 import { Message, Loading } from 'element-ui';
 import qs from 'qs';
