@@ -5,7 +5,7 @@ module.exports = {
             proxy: { // 配置跨域
                 '/': {
                     //要访问的跨域的api的域名
-                    target: 'https://api.asilu.com/',
+                    target: 'http://localhost:3000',
                     ws: true,
                     secure: false,  // 如果是https接口，需要配置这个参数
                     changOrigin: true,

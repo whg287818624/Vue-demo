@@ -23,7 +23,7 @@
         props: ['numC'],
         methods:{
             del(){
-                this.numC = -1;
+                this.numC = -1;//不能直接改变父组件传下的值
             }
         },
         created(){
