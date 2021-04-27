@@ -5,11 +5,14 @@
 			<el-tab-pane label="FTP测试" name="first">
 			    <ftp></ftp>
 			</el-tab-pane>
-		    <el-tab-pane label="slot-scope" name="second">
+			<el-tab-pane label="table编辑" name="second">
+			    <tableEdit></tableEdit>
+			</el-tab-pane>
+		    <el-tab-pane label="slot-scope" name="third">
 		        <img alt="Vue logo" src="./assets/logo.png">
 		        <Test msg="Welcome to Your Vue.js App" />
 		    </el-tab-pane>
-		    <el-tab-pane label="slot插槽" name="third">
+		    <el-tab-pane label="slot插槽" name="four">
 		        <img alt="Vue logo" src="./assets/logo.png">
 		        <Test2>
 		            <template v-slot:aa="dd">
@@ -24,7 +27,7 @@
 		            </div>
 		        </Test2>
 		    </el-tab-pane>
-		    <el-tab-pane label="多重组件嵌套" name="four">
+		    <el-tab-pane label="多重组件嵌套" name="five">
 		        <img alt="Vue logo" src="./assets/logo.png">
 		        <aaa></aaa>
 		    </el-tab-pane>
@@ -41,17 +44,19 @@
     import Test2 from './components/test2.vue'
     import aaa from './components/ABC/AAA.vue'
     import ftp from './components/ftp.vue'
+    import tableEdit from './components/tableEdit.vue'
     export default {
         name: 'app',
         components: {
             Test,
             Test2,
             aaa,
-			ftp
+			ftp,
+			tableEdit
         },
         data() {
             return {
-                activeName: 'first'
+                activeName: 'second'
             };
         },
         methods: {
