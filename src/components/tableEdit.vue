@@ -82,6 +82,8 @@
 			cancelEdit(row) {
 			  row.edit = false
 			  row.name = row.oldName
+			  row.city = row.oldCity
+			  row.id = row.oldId
 			  this.$message({
 			    message: '已取消!',
 			    type: 'warning'
@@ -90,6 +92,8 @@
 			confirmEdit(row) {
 			  row.edit = false
 			  row.oldName = row.name
+			  row.oldCity = row.city
+			  row.oldId = row.id
 			  console.log(row) //同时,this.list已修改!
 			  this.$message({
 			    message: '修改成功!',
