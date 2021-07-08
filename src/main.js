@@ -11,6 +11,15 @@ Vue.prototype.$fetch = fetch;
 
 Vue.config.productionTip = false
 
+router.beforeEach((to, from, next) =>{
+	let  token = localStorage.getItem('token');
+    if (!token && to.name !== 'login'){
+        // router.replace({ path: '/login' });
+		next({replace:false,name:'login'});
+    }
+	next();
+})
+
 new Vue({
   router,
   store,
