@@ -2,6 +2,8 @@
 
 Vue-demo git test
 
+---------------------------
+
 ## Project setup
 ```
 npm install
